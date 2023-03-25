@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Router Description</h2>
+    <table class="table table-sm table-secondary">
+       
+        <tr>
+            <th>Methods</th>
+            <th>Path</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>POST</td>
+            <td>('/Register')</td>
+            <td>Signing up to the site</td>
+        </tr>
+        <tr>
+            <td>POST</td>
+            <td>('/Login')</td>
+            <td>Getting into the site</td>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td>('/')</td>
+            <td>Home</td>
+        </tr>
+    </table>
+    <h2>USERS</h2>
+    <table class="table table-sm table-secondary">
+        <tr>
+            <th>Methods</th>
+            <th>Path</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td>('/Users') <br><br> ('/User/:id)</td>
+            <td>Getting all users <br><br> Getting a single user using an id </td>
+        </tr>
+        <tr>
+            <td>POST</td>
+            <td>('/User')</td>
+            <td>Creating a new user</td>
+        </tr>
+        <tr>
+            <td>PUT</td>
+            <td>('/User/:id')</td>
+            <td>Updating an existing user details using id</td>
+        </tr>
+        <tr>
+            <td>DELETE</td>
+            <td>('/User/:id')</td>
+            <td>Deleting an existing user using an id</td>
+        </tr>
+    </table>
+    <h2>PRODUCTS</h2>
+    <table class="table table-sm table-secondary">
+        <tr>
+            <th>Methods</th>
+            <th>Path</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td>('/Products') <br><br> ('/Product/:id)</td>
+            <td>Getting all products <br><br> Getting a single product using an id </td>
+        </tr>
+        <tr>
+            <td>POST</td>
+            <td>('/Product')</td>
+            <td>Adding a new product</td>
+        </tr>
+        <tr>
+            <td>PUT</td>
+            <td>('/Product/:id')</td>
+            <td>Updating an existing product details using id</td>
+        </tr>
+        <tr>
+            <td>DELETE</td>
+            <td>('/Product/:id')</td>
+            <td>Deleting an existing product using an id</td>
+        </tr>
+    </table>
+        <h2>CART</h2>
+    <table class="table table-sm table-secondary">
+        <tr>
+            <th>Methods</th>
+            <th>Path</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td>('/Cart') <br><br> ('/cart/user/:id')</td>
+            <td>View the cart <br><br>viewing a cart of a user</td>
+        </tr>
+        <tr>
+            <td>POST</td>
+            <td>('/Cart/user/:id')</td>
+            <td>Sending item into the cart</td>
+        </tr>
+        <tr>
+            <td>PUT</td>
+            <td>('/Cart/user/:id')</td>
+            <td>Updating the cart</td>
+        </tr>
+        <tr>
+            <td>DELETE</td>
+            <td>('cart') <br><br>('/Cart/user/:id')</td>
+            <td>Deleting everything on a cart <br><br> Deleting one item on the cart</td>
+        </tr>
+    </table>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>   
+</body>
+</html>
